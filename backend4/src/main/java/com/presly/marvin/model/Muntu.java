@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "bank1")
+@Table(name = "bank4")
 public class Muntu {
 
 	@Id

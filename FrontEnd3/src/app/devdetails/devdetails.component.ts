@@ -25,10 +25,13 @@ export class DevdetailsComponent implements OnInit {
 
         console.log("===============A=================");
         console.log(data)
-        console.log("===============B=================");
+        console.log("===============data=================");
         this.employee = data;
+        console.log(Employee)
+        console.log("===============EEEmployee=================");
 
-        console.log("===============C=================");
+        console.log(this.employee)
+        console.log("===============employee=================");
       }, error => console.log(error));
   }
 
