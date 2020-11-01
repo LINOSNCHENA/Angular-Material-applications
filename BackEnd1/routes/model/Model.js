@@ -3,8 +3,8 @@ var sql = require('./Database.js');
 
 var Employee = function (employee) {
   this.name = employee.name;
-  this.dept = employee.dept;
   this.post = employee.post;
+  this.dept = employee.dept;
   this.salary = employee.salary;
   this.status = employee.status;
   this.createdat = new Date().toISOString().substring(0, 19).replace('T', ' ');
