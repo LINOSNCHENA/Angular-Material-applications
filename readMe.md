@@ -31,7 +31,7 @@ mvn spring-boot:run
 
 ```
 
-## Object
+##  Data Object properties
 
 1. name
 2. post
@@ -46,7 +46,8 @@ mvn spring-boot:run
 - Open [http://localhost:8081/](http://localhost:8081/) in browser to see the backend of the application.
 
 ## Interface U-Xperience
-Below are some Screens shots from the application in development
+Below are some Screens shots from the application console
 
-![ AppMuntu #1 ](https://github.com/LINOSNCHENA/NodeAPI-Present-Mysql-Model-Implemented/blob/master/page1.png)
-![ AppMuntu #2 ](https://github.com/LINOSNCHENA/NodeAPI-Present-Mysql-Model-Implemented/blob/master/page2.png)
+![ AppMuntu #1 ](https://github.com/LINOSNCHENA/Angular-Material-applications-Java-Vs-NodeJS--FS5/blob/master/uxView/page1.png)
+![ AppMuntu #2 ](https://github.com/LINOSNCHENA/Angular-Material-applications-Java-Vs-NodeJS--FS5/blob/master/uxView/page2.png)
+![ AppMuntu #3 ](https://github.com/LINOSNCHENA/Angular-Material-applications-Java-Vs-NodeJS--FS5/blob/master/uxView/page1.png)
