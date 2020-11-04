@@ -18,16 +18,16 @@ createdat TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP);
     INSERT INTO bank1
         ( name, dept, post)
     VALUES
-        ("Marvin Mwenda1", "Management", "Teacher" ),
-        ("Engineer Brno1", "Engineering", " Engineer" ),
-        ("Lorena James1", "Human Resource", "Executive" ),
-        ("Tonga Marvin1", "Management", "Director" ),
-        ("Linos Marvin1", "HoD", "Oxford" ),
-        ('NORIA Nicoles1', 'Teacher', 'cathy.phiri@lsk.co.uk'),
-        ('MARTIN Leonard1', 'Science', 'leon.lorena@kzn.zm'),
+        ("Malaya Mwenda1", "Manager", "Teacher" ),
+        ("Kelo Brno1", "Engineer", " Engineer" ),
+        ("Lorena James1", "Resource", "Executive" ),
+        ("Tonga Marvin1", "Manager", "Director" ),
+        ("Nyanja Marvin1", "HoD", "Oxford" ),
+        ('Noria Nicoles1', 'Teacher', 'cathy.phiri@lsk.co.uk'),
+        ('Martin Leonard1', 'Science', 'leon.lorena@kzn.zm'),
         ('Nikolas Marvin1', 'Engineer', 'nikolas.marvina@gmail.ru'),
-        ('Semon WORKS1', 'Nurse', 'marvin.works@pba.zm'),
-        ('Ice1 Cube', 'Developer', 'elvis.presly@prg.cz');
+        ('Simon Mwemba1', 'Nurse', 'marvin.works@pba.zm'),
+        ('Ice Queen', 'Developer', 'elvis.presly@prg.cz');
 
 
 DROP TABLE IF EXISTS BANK4;
@@ -48,14 +48,14 @@ createdat TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP);
     INSERT INTO BANK4
         ( name, dept, post)
     VALUES
-        ("Marvin Mwenda4", "Management", "Teacher" ),
-        ("Engineer Brno4", "Engineering", " Engineer" ),
-        ("Lorena James4", "Human Resource", "Executive" ),
-        ("Tonga Marvin4", "Management", "Director" ),
-        ("Linos Marvin4", "HoD", "Oxford" ),
-        ('NORIA Nicoles4', 'Teacher', 'cathy.phiri@lsk.co.uk'),
-        ('MARTIN Leonard4', 'Science', 'leon.lorena@kzn.zm'),
-        ('Nikolas Marvin4', 'Engineer', 'nikolas.marvina@gmail.ru'),
-        ('Semon WORKS4', 'Nurse', 'marvin.works@pba.zm'),
-        ('Ice Cube4', 'Developer', 'elvis.presly@prg.cz');
-    select* from BANK4, bank1;
+        ("Mwenda4", "Management", "Teacher" ),
+        ("Engineer4", "Janalist", " Engineer" ),
+        ("Lorena4", "IT", "Executive" ),
+        ("Tonga4", "Management", "Director" ),
+        ("Linosarvin4", "HoD", "Oxford" ),
+        ('Nicoles4', 'Teacher', 'cathy.phiri@lsk.co.uk'),
+        ('Leonard4', 'Science', 'leon.lorena@kzn.zm'),
+        ('Marvin4', 'Engineer', 'nikolas.marvina@gmail.ru'),
+        ('Lemon4', 'Nurse', 'marvin.works@pba.zm'),
+        ('Cube4', 'Developer', 'elvis.presly@prg.cz');
+    select* from BANK4, BANK1;
