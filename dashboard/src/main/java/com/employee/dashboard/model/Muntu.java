@@ -28,9 +28,9 @@ public class Muntu {
 	columnDefinition = "varchar(255) default '190850'")
 	private int salary;
 
-	@Column(name = "createdat", // nullable = false, 
-	columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
-	private Date createdat;
+	@Column(name = "createdat", nullable = false, updatable = false,
+	 insertable = false, columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
+    private Date createdat;
 
 	public Muntu(String name, String post, String dept, 
 	int salary,  
