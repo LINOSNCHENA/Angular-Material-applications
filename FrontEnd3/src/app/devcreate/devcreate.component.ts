@@ -10,38 +10,32 @@ import { Employee } from '../services/employee';
 })
 export class DevcreateComponent implements OnInit {
 
- 
   employee: Employee = new Employee();
   submitted = false;
 
-  constructor(private employeeService: DevserviceService,
+  constructor(
+    private employeeService: DevserviceService,
     private router: Router) { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
+
+  onSubmit() { this.submitted = true; this.save(); }
 
   newEmployee(): void {
     this.submitted = false;
     this.employee = new Employee();
   }
-
   save() {
     this.employeeService
-    .createEmployee(this.employee).subscribe(data => {
-      console.log(data)
-      this.employee = new Employee();
-      this.gotoList();
-    }, 
-    error => console.log(error));
+      .createEmployee(this.employee).subscribe(data => {
+        this.employee = new Employee();
+        console.log("this.employee is SAVED ===========>>>")
+        console.log(this.employee)
+        this.gotoList();
+      },
+        error => console.log(error));
   }
 
-  onSubmit() {
-    this.submitted = true;
-    this.save();    
-  }
 
-  gotoList() {
-    this.router.navigate(['/employees']);
-  }
-
+  gotoList() { this.router.navigate(['/employees']); }
 }

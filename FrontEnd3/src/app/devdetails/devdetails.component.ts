@@ -9,34 +9,40 @@ import { Employee } from '../services/employee';
   styleUrls: ['./devdetails.component.css']
 })
 export class DevdetailsComponent implements OnInit {
+
   id: number;
   employee: Employee;
+  activeBanker = null;
 
-  constructor(private route: ActivatedRoute,private router: Router,
-    private employeeService: DevserviceService) { }
+  constructor(
+    private employeeService: DevserviceService,
+    private route: ActivatedRoute,
+    private router: Router,) { }
 
   ngOnInit() {
     this.employee = new Employee();
-
     this.id = this.route.snapshot.params['id'];
-    
     this.employeeService.getEmployee(this.id)
       .subscribe(data => {
-
-        console.log("===============A=================");
-        console.log(data)
-        console.log("===============data=================");
-        this.employee = data;
-        console.log(Employee)
-        console.log("===============EEEmployee=================");
-
-        console.log(this.employee)
-        console.log("===============employee=================");
+        this.activeBanker = data;
+        console.log('1. PEMBA-data =======>>>> DETAIL')
+        console.log(this.activeBanker)
       }, error => console.log(error));
+
+    this.getBanker(this.route.snapshot.paramMap.get('id'));
   }
 
-  list(){
-    this.router.navigate(['employees']);
+  getBanker(id: string): void {
+    this.employeeService.getEmployee(this.id)
+      .subscribe(
+        data => {
+          this.activeBanker = data;
+          console.log('2-ActiveBanker ===>>> DETAIL')
+          console.log(this.activeBanker);
+        },
+        error => { console.log(error); });
   }
+
+  list() { this.router.navigate(['employees']); }
 
 }
