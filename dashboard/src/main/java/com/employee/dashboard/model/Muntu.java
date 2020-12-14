@@ -40,21 +40,18 @@ public class Muntu {
   @Column(
     name = "createdat",
     nullable = false,
-    updatable = false, // pattern = "yyyy-MM-dd HH:mm:ss",
+    updatable = false,
     insertable = false,
     columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
   )
   private Date createdat;
 
-  @Column(
-    name = "updatedat",
-    nullable = false)
   @JsonFormat(
     locale = "zh",
-    timezone = "GMT+8",// nullable = false,
-    pattern = "yyyy-MM-dd | ' BRNO-TIME ' | HH:mm:ss"
+    timezone = "GMT+1",
+    pattern = "yyyy-MM-dd | ' Pemba-Time ' | HH:mm:ss"
   )
-  private LocalDateTime updatedat= LocalDateTime.now();
+  private LocalDateTime updatedat = LocalDateTime.now();
 
   public Muntu(
     String name,
