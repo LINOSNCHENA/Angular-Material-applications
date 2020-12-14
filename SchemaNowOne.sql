@@ -35,11 +35,10 @@ name VARCHAR    (99) NOT NULL,
 dept VARCHAR    (99) NOT NULL,
 post VARCHAR    (99) NOT NULL,
 salary int NOT NULL default '823',
+CHECK (salary >=19) ,
+
 createdat TIMESTAMP NOT NULL DEFAULT NOW(),
-updatedat TIMESTAMP NOT NULL DEFAULT NOW() ON UPDATE now(),
-CHECK (salary >=19) 
-
-
+updatedat TIMESTAMP NOT NULL DEFAULT NOW() ON UPDATE now()
  );
 
     INSERT INTO BACKSPRING  ( name, dept, post)

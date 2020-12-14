@@ -1,29 +1,39 @@
-<h2>Employee Details</h2>
+<h2>Complete record of Employee </h2>
 <hr />
 <div *ngIf="activeBanker">
   <!-- </div>
 <div *ngIf="this.employee"> -->
   <div>
-    <label><b>Ful Name: </b></label> {{activeBanker.name}}
+    <label><b>Man No. : </b></label> {{activeBanker.id}}
+  </div>
+  <div>
+    <label><b>Names : </b></label> {{activeBanker.name}}
   </div>
   <div>
     <label><b>Dept : </b></label> {{activeBanker.dept}}
   </div>
   <div>
-    <label><b>Post: </b></label> {{activeBanker.post}}
+    <label><b>Post : </b></label> {{activeBanker.post}}
   </div>
   <div>
     <label><b>Salary : </b></label> {{activeBanker.salary}}
   </div>
+
+  <div>
+    <label><b>Creation Date : </b></label> {{activeBanker.createdat}}
+  </div>
+
+  <div>
+    <label><b>Updation Date : </b></label> {{activeBanker.updatedat}}
+  </div>
 </div>
 
-<br>
-<br>
+<hr />
 <button (click)="list()" class="btn btn-primary">Back to Employee List</button><br>
 
-
+<!-- 
 <div *ngIf="activeBanker" class="edit-form">
-  <!-- <h4> ZANACO - BANKER</h4> -->
+   <h4> ZANACO - BANKER</h4> 
   <form>
     <div class="form-group"> <label for="name1">Name</label>
       <input type="label" class="form-control" id="name1" [(ngModel)]="activeBanker.name" name="name1" />
@@ -38,4 +48,4 @@
     <div class="form-group">
       <label for="description">salary</label> <input type="text" class="form-control" id="salary"
         [(ngModel)]="activeBanker.salary" name="salary" />
-    </div>
+    </div> -->

@@ -7,13 +7,13 @@ This app  implement business logic, this logic been mostly outside the of the en
 The full developmental stack of the application consist of the following;
 
 1. FrontEnd (Angular+9)
-2. Server(ExpresJS, nodejs)
+2. Server(Expresjs, Nodejs)
 3. Database(MySQL)
 4. Compatiability of Java vs NodeJS
 
 ## Execution commands
 
-This is a restfull Backend application only. To use this application, move into the root folder where there is the server.js file. Enter the following commands. Execution of this application use the following command
+To use this application, move into the root folder where there is the execution files. In Execution of this application use the following command
 
 ```
 FrontEnd
@@ -23,14 +23,11 @@ npm install rxjs-compat
 
 Backend
 ---------------------
-cd backspring\
 mvn clean package
-
-cd backspring\
 mvn spring-boot:run
 
 MySql
-
+----------------------
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'xxxxxxx';
 
 ```
@@ -38,7 +35,7 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'xxxxxxx'
 ## Links for the frontend endpoints and backend endpoints
 
 - Open [http://localhost:4200/](http://localhost:4200/) in browser to see the frontend of the application.
-- Open [http://localhost:8081/](http://localhost:8080/) in browser to see the backend of the application.
+- Open [http://localhost:8081/](http://localhost:8080/employees) in browser to see the backend application.
 
 ## Interface U-Xperience
 Below are some Screens shots from the application console
