@@ -46,12 +46,15 @@ public class Muntu {
   )
   private Date createdat;
 
+  @Column(
+    name = "updatedat",
+    nullable = false)
   @JsonFormat(
     locale = "zh",
-    timezone = "GMT+8",
+    timezone = "GMT+8",// nullable = false,
     pattern = "yyyy-MM-dd | ' BRNO-TIME ' | HH:mm:ss"
   )
-  private LocalDateTime updatedat;
+  private LocalDateTime updatedat= LocalDateTime.now();
 
   public Muntu(
     String name,
